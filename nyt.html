@@ -22,9 +22,51 @@
           <i class="fa fa-newspaper-o"></i> New York Times Search</strong>
       </h1>
     </div>
+ <!-- Row for Searching New York Times -->
+ <div class="row">
+    <div class="col-sm-12">
+      <br>
+      <!-- First card is for handling the search parameters -->
+      <div class="card">
+        <div class="card-header">
+          <strong>
+            <i class="fa fa-list-alt"></i> Search Parameters</strong>
+        </div>
+        <div class="card-body"> 
+
+ <!-- Here we create an HTML Form for handling the inputs-->
+ <form role="form">
+
+    <!-- Here we create the text box for capturing the search term-->
+    <div class="form-group">
+      <label for="search">Search Term:</label>
+      <input type="text" class="form-control" id="search-term">
+    </div>
 
 
+   <!-- Here we capture the number of records that the user wants to retrieve  -->
+    <div class="form-group">
+    <label for="pwd">Number of Records to Retrieve:</label>
+     <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+    <option selected value="1">1</option>
+    <!-- Setting the option for 5 as default -->
+    <option value="5" selected>5</option>
+    <option value="10">10</option>
+    </select>
+    </div>
 
+     <!-- Here we capture the Start Year Parameter-->
+        <div class="form-group">
+            <label for="start-year">Start Year (Optional):</label>
+            <input type="text" class="form-control" id="start-year">
+          </div>
+
+
+          <!-- Here we capture the End Year Parameter -->
+          <div class="form-group">
+            <label for="end-year">End Year (Optional):</label>
+            <input type="text" class="form-control" id="end-year">
+          </div>
 
 
   <!-- jQuery JS -->
